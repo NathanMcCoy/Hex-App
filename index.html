@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hex App</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="manifest" href="manifest.json">
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="grid-container" id="bigGrid">
+      <div class="grid-item" id="menu">
+        <h2 onclick="displayMenu()">Menu</h2>
+        <span id="wholeMenuPannel">
+          <div
+            id="difficulty"
+            class="menuButton"
+            onclick="openMenuPannel('dif')"
+          >
+            Difficulty
+          </div>
+          <span id="difficultyOptions"></span>
+          <div id="gameMode" class="menuButton" onclick="openMenuPannel('gm')">
+            Game-mode
+          </div>
+          <span id="gameModeOption"></span>
+          <div id="restart" class="menuButton" onclick="newGame()">Restart</div>
+        </span>
+      </div>
+      <div class="grid-item" id="game">
+        <h1>What is the color code for this colour?</h1>
+
+        <div id="colorSample"></div>
+        <div class="answer">Score: <span id="score"></span></div>
+        <div class="answer">
+          <span id="a" class="ansButton"></span>
+          <span id="b" class="ansButton"></span>
+        </div>
+        <div class="answer">
+          <span id="c" class="ansButton"></span>
+          <span id="d" class="ansButton"></span>
+        </div>
+        <div class="answer">
+          <span id="e" class="ansButton"></span>
+          <span id="f" class="ansButton"></span>
+        </div>
+        <div class="answer">
+          <span id="g" class="ansButton"></span>
+          <span id="h" class="ansButton"></span>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+  <footer><div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></footer>
+</html>
